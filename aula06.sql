@@ -72,3 +72,11 @@ VALUES
 
 SELECT * FROM usuario;
 
+SELECT * 
+FROM usuario 
+WHERE id_usuario = 2;
+
+use mysql;
+UPDATE mysql.user SET Host='%' WHERE Host='localhost' AND User='root';
+FLUSH PRIVILEGES;
+
